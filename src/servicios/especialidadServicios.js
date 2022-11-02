@@ -1,20 +1,13 @@
-const especialidades = [
-    {
-        nombre: "Otorrinolaringología",
-        descripcion: "Atiende oido, nariz y vías respiratorias superiores",
-        atiende_solo_mujeres: false
-    }, 
-    {
-        nombre: "Ginecología",
-        descripcion: "Atiende sistema reproductor femenino",
-        atiende_solo_mujeres: true
-    }
-]
+import axios from "axios";
 
 const especialidadServicios = {};
 
 especialidadServicios.obtenerEspecialidades = () => {
-    return especialidades;
+    return axios.get("http://localhost:8000/especialidades");
+}
+
+especialidadServicios.buscarEspecialidadPorCriterio = (criterio) => {
+    return axios.get("http://localhost:8000/especialidades?q="+criterio);
 }
 
 export default especialidadServicios;

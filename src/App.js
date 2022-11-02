@@ -3,6 +3,7 @@ import FormEspecialidades from "./componentes/especialidades/FormEspecialidades"
 import TablaEspecialidades from "./componentes/especialidades/TablaEspecialidades";
 import Banner from "./componentes/general/Banner";
 import Header from "./componentes/general/Header";
+import Variables from "./componentes/especialidades/Variables";
 
 const App = () => {
   return (

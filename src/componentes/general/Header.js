@@ -2,7 +2,7 @@ const Header = () => {
     return (
         <header className="d-flex flex-wrap justify-content-center px-3 py-3 mb-3" style={{backgroundColor: "#063970"}}>
             <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none" style={{color: "#ffff00"}}>
-                <span className="fs-4">Doctor Online</span>
+                <span className="fs-4"><i className="bi bi-droplet"></i> Doctor Online</span>   
             </a>
 
             <ul className="nav nav-pills">
