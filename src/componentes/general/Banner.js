@@ -1,3 +1,5 @@
+import banner1 from "../../imgs/banner1.jpg";
+
 const Banner = () => {
     return (
         <div id="myCarousel" className="carousel slide" data-bs-ride="carousel">
@@ -8,7 +10,7 @@ const Banner = () => {
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777" /></svg>
+                    <img src={banner1} alt="doctor" width="100%" height="300"/>
 
                     <div className="container">
                         <div className="carousel-caption text-start">

@@ -85,12 +85,12 @@ const TablaEspecialidades = () => {
                     :  
                     (
                         listaEspecialidades.map((especialidad) => (
-                            <tr>
+                            <tr key={especialidad._id}>
                                 <td>{especialidad.nombre}</td>
                                 <td>{especialidad.descripcion}</td>
                                 <td>{especialidad.atiende_solo_mujeres ? "Sí" : "No"}</td>
                                 <td>
-                                    <button className="btn btn-primary btn-sm me-2">Editar</button>
+                                    <a href={"/especialidades/form/"+especialidad._id} className="btn btn-primary btn-sm me-2">Editar</a>
                                     <button className="btn btn-danger btn-sm">Eliminar</button>
                                 </td>
                             </tr>
