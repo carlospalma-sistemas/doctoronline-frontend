@@ -28,7 +28,7 @@ const FormEspecialidades = () => {
             }
             navigateTo("/especialidades");
         } catch (error) {
-            console.log("Ocurrió un error. "+error);
+            console.log(error);
         }
     }
 

@@ -22,4 +22,8 @@ especialidadServicios.modificarEspecialidad = (id, especialidad) => {
     return axios.put("http://localhost:8000/especialidades/"+id, especialidad);
 }
 
+especialidadServicios.borrarEspecialidad = (id) => {
+    return axios.delete("http://localhost:8000/especialidades/"+id);
+}
+
 export default especialidadServicios;
